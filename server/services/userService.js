@@ -28,10 +28,6 @@ class UserService {
       }
     });
   }
-
-  static validPassword(rawPassword, encodedPassword) {
-    return db.User.validPassword(rawPassword, encodedPassword)
-  }
 }
 
 module.exports = UserService;
